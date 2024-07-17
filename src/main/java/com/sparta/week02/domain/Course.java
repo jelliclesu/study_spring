@@ -1,10 +1,12 @@
 package com.sparta.week02.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor // 기본생성자 대신 생성
 @Entity // 테이블임을 나타냄
+@Getter
 public class Course extends Timestamped{
 
     @Id // ID 값, Primary Key로 사용하겠다는 뜻
@@ -17,16 +19,16 @@ public class Course extends Timestamped{
     @Column(nullable = false)
     private String tutor;
 
-    public Long getId() {
-        return this.id;
-    }
-    public String getTitle() {
-        return this.title;
-    }
-
-    public String getTutor() {
-        return this.tutor;
-    }
+//    public Long getId() {
+//        return this.id;
+//    }
+//    public String getTitle() {
+//        return this.title;
+//    }
+//
+//    public String getTutor() {
+//        return this.tutor;
+//    }
 
     public Course(String title, String tutor) {
         this.title = title;
