@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor // 기본생성자 대신 생성
 @Entity // 테이블임을 나타냄
-public class Course {
+public class Course extends Timestamped{
 
     @Id // ID 값, Primary Key로 사용하겠다는 뜻
     @GeneratedValue(strategy = GenerationType.AUTO) // 자동 증가 명령
