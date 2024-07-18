@@ -30,4 +30,10 @@ public class Course extends Timestamped {
         this.title = requestDto.getTitle();
         this.tutor = requestDto.getTutor();
     }
+
+    // PostMapping 시 이용
+    public Course(CourseRequestDto requestDto) {
+        this.title = requestDto.getTitle();
+        this.tutor = requestDto.getTutor();
+    }
 }
