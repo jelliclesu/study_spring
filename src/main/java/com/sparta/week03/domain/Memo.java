@@ -19,6 +19,11 @@ public class Memo extends Timestamped {
     @Column(nullable = false)
     private String contents;
 
+    public Memo(String username, String contents) {
+        this.username = username;
+        this.contents = contents;
+    }
+
     public Memo(MemoRequestDto requestDto) {
         this.username = requestDto.getUsername();
         this.contents = requestDto.getContents();
