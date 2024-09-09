@@ -18,6 +18,10 @@ public class MemberService {
         this.memberRepository = memberRepository;
     }
 
+    /** 변경 전
+     private final MemberRepository memberRepository = new MemoryMemberRepository();
+     */
+
 
     /**
      * 회원 가입
