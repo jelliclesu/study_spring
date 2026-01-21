@@ -72,6 +72,11 @@ public class RequestParamController {
         return "ok";
     }
 
+    /**
+     * @RequestParam Map, MultiValueMap
+     * Map(key=value)
+     * MultiValueMap(key=[value1, value2, ...]) ex) (key=userIds, value=[id1, id2])
+     */
     @ResponseBody
     @RequestMapping("/request-param-map")
     public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
