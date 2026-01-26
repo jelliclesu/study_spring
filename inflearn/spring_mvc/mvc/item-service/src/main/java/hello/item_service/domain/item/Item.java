@@ -7,8 +7,11 @@ public class Item {
 
     private Long id;
     private String itemName;
-    private int price;
-    private int quantity;
+    private Integer price;
+    private Integer quantity;
+
+    public Item() {
+    }
 
     public Item(String itemName, int price, int quantity) {
         this.itemName = itemName;
